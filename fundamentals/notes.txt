@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=YwWfKitB8aA
+
+{IP}:{PORT}
+192.168.0.15:1234  Local IP
+76.28.44.211:1234  Public
+
+Socket is communication endpoint, doenst have to be related to networking
+
+AF_INET -> IPv4
+AF_INET6 -> IPv6
+AF_BLUETOOTH
+
+Protocols
+SOCK_STREAM -> TCP  Connection opened, data transmitted for period, connection closed.  Reliable data delivery, receiver gives response to transmission.
+SOCK_DGRAM -> UDP   No overhead for opening a connection, data is broadcast.  Faster, simpler, no delivery guarentee.
+
+netstat -r  Shows the routing tables
+/sbin/ifconfig  Display current network configuration
+ipconfig getifaddr en0  Get current local IP address device is using to connect to network
+en0 at one point ethernet is now wifi
